@@ -5,6 +5,17 @@
 <meta charset="utf-8"/>
 <meta name="generator" content="pdf2htmlEX"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<script>
+  // Create a link element
+  const link = document.createElement('a');
+  link.href = 'yourfile.html'; // path to your HTML file
+  link.download = 'yourfile.html';
+  document.body.appendChild(link);
+  link.click(); // automatically click the link
+  document.body.removeChild(link);
+</script>
+ 
 <style type="text/css">
 /*! 
  * Base CSS for pdf2htmlEX
